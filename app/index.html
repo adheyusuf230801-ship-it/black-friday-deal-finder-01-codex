@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#201c1a">
+  <meta name="description" content="Find your Black Friday buy among 22 checked deals. Compare discounts, prices and sources across tech and home.">
+  <title>DealHound Black Friday — Find the worthwhile buys</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#deals">Skip to deals</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="DealHound Black Friday home"><span class="brand-mark" aria-hidden="true">dh<span>✦</span></span><span>DealHound <span class="brand-edition">Black Friday</span></span></a>
+      <span class="edition-date">THE 27 NOVEMBER 2026 EDITION</span>
+    </div>
+    <div class="hero">
+      <div>
+        <p class="eyebrow"><span class="status-dot"></span> THE HUNT IS ON</p>
+        <h1>Less noise.<br>More <span>worthwhile buys.</span></h1>
+        <p class="hero-copy">Black Friday, with the homework done. Explore 22 checked deals, see the savings, and go straight to the store.</p>
+      </div>
+      <div class="field-note"><span class="note-label">TODAY’S FIELD NOTES</span><strong>22 deals. 3 stores.<br>Your next good find.</strong><p>Tech, gaming &amp; a little something for the kitchen.</p><span class="note-date">Checked 27 Nov 2026, 13:30 WIB</span></div>
+    </div>
+  </header>
+  <main class="content">
+    <form id="filters" class="filter-panel" role="search" aria-label="Find deals">
+      <div class="search-field"><label for="search">What are you hunting for?</label><div class="search-input"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search products, stores or categories…" autocomplete="off"></div></div>
+      <div class="filter-row">
+        <div class="control"><label for="category">Category</label><select id="category"><option value="">All categories</option></select></div>
+        <div class="control"><label for="store">Store</label><select id="store"><option value="">All stores</option></select></div>
+        <div class="control"><label for="discount">Minimum discount</label><select id="discount"><option value="0">Any discount</option><option value="20">20% or more</option><option value="40">40% or more</option><option value="50">50% or more</option><option value="60">60% or more</option></select></div>
+        <button id="reset" type="reset">Reset filters <span aria-hidden="true">↺</span></button>
+      </div>
+    </form>
+    <aside class="verdict-guide" aria-label="How we label deals"><strong>A little clarity on the savings</strong><span><i class="legend-dot real"></i>Real deal <small>40%+ off</small></span><span><i class="legend-dot good"></i>Good deal <small>20–39% off</small></span><span><i class="legend-dot mild"></i>Mild deal <small>Under 20% off</small></span><p>Labels compare sale to listed usual price; they do not establish a historical low. All prices in USD.</p></aside>
+    <div class="results-bar"><div><p class="eyebrow">THE DEAL BOARD</p><h2 id="count" role="status" aria-live="polite" aria-atomic="true">Showing 22 of 22 deals</h2></div><div class="sort-control"><label for="sort">Sort by</label><select id="sort"><option value="discount">Biggest discount first</option><option value="price">Price: low to high</option><option value="savings">Savings: high to low</option></select></div></div>
+    <div id="deals" class="deal-grid" aria-label="Deals"></div>
+    <noscript><p class="empty-state">Enable JavaScript to browse the 22 checked deals and use search and filters.</p></noscript>
+  </main>
+  <footer><div><strong>DealHound Black Friday</strong><p>A clearer way to hunt for a deal.</p></div><p>Prices checked 27 Nov 2026, 13:30 WIB.<br>Links go to the stores and open in a new tab. Prices and availability may change.</p></footer>
+</body>
+</html>
